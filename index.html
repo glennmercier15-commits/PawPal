@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <script>
+      window.global = window;
+      window.process = { env: { EXPO_OS: 'web', NODE_ENV: 'development' } };
+      window.setImmediate = window.setImmediate || ((fn, ...args) => setTimeout(fn, 0, ...args));
+    </script>
   </head>
   <body>
     <div id="root"></div>

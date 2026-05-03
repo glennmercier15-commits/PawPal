@@ -7,7 +7,13 @@ let ai: GoogleGenAI | null = null;
 
 export function getAiClient(): GoogleGenAI {
   if (!ai) {
-    ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey || apiKey === "MY_GEMINI_API_KEY") {
+      console.warn("GEMINI_API_KEY is not set. Please add it to your environment variables or secrets.");
+      // We still initialize it to avoid crashing the whole module, 
+      // but it will fail on the actual call.
+    }
+    ai = new GoogleGenAI({ apiKey: apiKey || "" });
   }
   return ai;
 }

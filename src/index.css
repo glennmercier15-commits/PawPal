@@ -47,6 +47,15 @@ body {
   font-family: var(--font-sans);
   background-color: var(--app-background);
   color: var(--app-text);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
