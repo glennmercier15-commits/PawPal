@@ -1,11 +1,38 @@
-<div align="center">
+# 🐾 PawPal — Your Magical Pet World
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A React Native (Expo) virtual pet care app for girls aged 5–12.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- 🐰 Choose & name your virtual pet (6 types)
+- 🍓 Daily care: feed, bathe, sleep, play
+- 🎨 Finger-drawing diary with voice notes
+- 🎮 Mini-games: Fetch & Obstacle Course
+- 🛍️ Accessory shop with Paw Coins
+- 👩👧 PIN-locked Parent Dashboard
+- 🌙 Light & Dark mode
+- 🔔 Daily push notification reminders
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- Expo SDK 54 + React Native 0.78
+- Zustand + AsyncStorage (state)
+- expo-av (audio)
+- react-native-signature-canvas (drawing)
+- expo-notifications (reminders)
+- expo-secure-store (parent PIN)
+- Lottie + Reanimated (animations)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Quick Start
+```bash
+git clone https://github.com/yourname/pawpal.git
+cd pawpal
+npm install
+npx expo start
+```
 
-</div>
+## Build for Production
+```bash
+eas build --platform all
+```
+
+## License
+MIT © 2026 YourName

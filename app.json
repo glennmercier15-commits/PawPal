@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "PawPal",
+    "slug": "pawpal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "pawpal",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF9ECA"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.pawpal",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "PawPal needs your mic to record voice notes for your pet's diary! \ud83c\udf99\ufe0f",
+        "NSPhotoLibraryUsageDescription": "PawPal saves your pet drawings to your diary."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FF9ECA"
+      },
+      "package": "com.yourname.pawpal",
+      "versionCode": 1,
+      "permissions": [
+        "RECORD_AUDIO",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-av",
+        { "microphonePermission": "PawPal needs your mic to record voice notes! \ud83c\udf99\ufe0f" }
+      ],
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        { "backgroundColor": "#FF9ECA", "image": "./assets/images/splash.png" }
+      ]
+    ],
+    "extra": {
+      "eas": { "projectId": "YOUR_EAS_PROJECT_ID" }
+    }
+  }
+}

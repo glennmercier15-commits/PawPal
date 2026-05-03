@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --color-pal-primary: var(--app-primary);
+  --color-pal-secondary: var(--app-secondary);
+  --color-pal-accent: var(--app-accent);
+  --color-pal-background: var(--app-background);
+  --color-pal-card: var(--app-card);
+  --color-pal-text: var(--app-text);
+  --color-pal-textLight: var(--app-textLight);
+  --color-pal-gold: var(--app-gold);
+  --color-pal-danger: var(--app-danger);
+  --color-pal-success: var(--app-success);
+}
+
+@layer base {
+  :root {
+    --app-primary: #FF9ECA;
+    --app-secondary: #B388FF;
+    --app-accent: #80DEEA;
+    --app-background: #FFF9FB;
+    --app-card: #FFE4F0;
+    --app-text: #5D3A6B;
+    --app-textLight: #B39DDB;
+    --app-gold: #FFD54F;
+    --app-danger: #FF6B6B;
+    --app-success: #69F0AE;
+  }
+  
+  .dark {
+    --app-primary: #E06FAA;
+    --app-secondary: #B388FF;
+    --app-accent: #80DEEA;
+    --app-background: #1A0A22;
+    --app-card: #2D1040;
+    --app-text: #F3E5F5;
+    --app-textLight: #CE93D8;
+    --app-gold: #FFC107;
+    --app-danger: #FF6B6B;
+    --app-success: #69F0AE;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--app-background);
+  color: var(--app-text);
+  display: flex;
+  justify-content: center;
+}

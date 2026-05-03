@@ -1,0 +1,10 @@
+{
+  "name": "PawPal",
+  "description": "A virtual pet care companion with a diary.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation",
+    "camera"
+  ],
+  "majorCapabilities": []
+}
